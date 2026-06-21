@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# venv
+venv/
+.venv/
+env/
+
+# resultados crus (gerados; mantidos fora do versionamento por padrão)
+results_laptop.csv
+results_laptop_scaled.csv
+results_lncc.csv
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.bbl
+*.blg
+*.out
+*.toc
+*.synctex.gz
+paper/main.pdf
+paper/figs/
+cbctq_overleaf.zip
+
+# OS
+.DS_Store
+Thumbs.db
