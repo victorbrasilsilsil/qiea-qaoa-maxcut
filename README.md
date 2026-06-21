@@ -1,18 +1,15 @@
 # QGA-QAOA
 
-QIEA (Quantum-Inspired Evolutionary Algorithm, Han & Kim) otimizando os
-parâmetros variacionais do QAOA para Max-Cut, comparado contra baselines
-clássicos (COBYLA, busca aleatória, COBYLA com restart) sob o mesmo
-orçamento de avaliações de circuito.
-
-Projeto para o pôster (resumo expandido) do **CBCTQ 2026**.
+QIEA (Quantum-Inspired Evolutionary Algorithm, Han & Kim) otimizando os parâmetros 
+variacionais do QAOA para Max-Cut, comparado contra baselines clássicos (COBYLA, 
+busca aleatória, COBYLA com restart) sob o mesmo orçamento de avaliações de circuito.
 
 ## Regra de arquitetura
 
-O **núcleo é NumPy puro, sem Pennylane**. O simulador QAOA é statevector
-(`qaoa.py`) para que o mesmo código rode tanto no laptop quanto no Jupyter
-da QLM 38E do LNCC, que só roda notebook e só tem numpy garantido (scipy
-via `!pip install`, usado apenas pelo COBYLA). Pennylane fica fora do núcleo.
+O núcleo é NumPy puro, sem Pennylane. O simulador QAOA é statevector
+(`qaoa.py`) para que o mesmo código rode tanto em uma máquina comum quanto numa QLM, 
+que só roda notebook e só tem numpy garantido (scipy via `!pip install`, usado apenas
+pelo COBYLA).
 
 ## Módulos
 
